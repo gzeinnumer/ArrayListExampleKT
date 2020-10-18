@@ -61,6 +61,13 @@ for(i in list){
 for ((index, value) in list.withIndex()) {
     println("$index: $value")
 }
+
+outer@ for (n in 2..100) {
+    for (d in 2 until n) {
+        if (n % d == 0) continue@outer
+    }
+    println("$n is prime")
+}
 ```
 ```kotlin
 for (x in 0..10) println(x) // Prints 0 through 10 (inclusive)
