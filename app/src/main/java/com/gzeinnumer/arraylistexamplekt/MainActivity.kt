@@ -2,18 +2,24 @@ package com.gzeinnumer.arraylistexamplekt
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 
 class MainActivity : AppCompatActivity() {
+
+    private val TAG = "MainActivity"
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         type1()
-        type3()
-        type5()
-        type4()
-        type6()
         type2()
+        type3()
+        type4()
+        type5()
+        type6()
+
+        looping()
     }
 
     private fun type1() {
@@ -63,5 +69,14 @@ class MainActivity : AppCompatActivity() {
         val list = arrayListOf<String>()
         list.add("Item 1")
         list.add("Item 2")
+    }
+
+    private fun looping() {
+
+        val list = listOf("orange", "apple")
+
+        for(i in list){
+            Log.d(TAG, "looping: $i")
+        }
     }
 }
