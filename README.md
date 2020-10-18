@@ -49,6 +49,8 @@ val list_2 = listOf("banana", "strawberry")
 val newList = list_1 + list_2 // [orange, apple, banana, strawberry]
 ```
 
+####
+
 #### Looping
 - Kotlin
 ```kotlin
