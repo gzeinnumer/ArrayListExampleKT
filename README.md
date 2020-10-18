@@ -1,5 +1,7 @@
 # ArrayListExampleKT
 
+[Looping](https://kotlinlang.org/docs/tutorials/kotlin-for-py/loops.html)
+
 #### ArrayList
 - Available `add`
 ```kotlin
@@ -55,6 +57,19 @@ val list = listOf("orange", "apple")
 for(i in list){
     Log.d(TAG, "looping: $i")
 }
+
+for ((index, value) in list.withIndex()) {
+    println("$index: $value")
+}
+```
+```kotlin
+for (x in 0..10) println(x) // Prints 0 through 10 (inclusive)
+
+for (x in 0 until 10) println(x) // Prints 0 through 9
+
+for (x in 0 until 10 step 2) println(x) // Prints 0, 2, 4, 6, 8
+
+val numbers = (0..9).toList()
 ```
 - Java
 ```java
