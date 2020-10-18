@@ -67,3 +67,9 @@ for (String d: list){
     Log.d(TAG, "looping: "+d);
 }
 ```
+
+---
+
+```
+Copyright 2020 M. Fadli Zein
+```
