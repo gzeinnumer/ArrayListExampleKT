@@ -1,7 +1,5 @@
 # ArrayListExampleKT
 
-[Looping](https://kotlinlang.org/docs/tutorials/kotlin-for-py/loops.html)
-
 #### ArrayList
 - Available `add`
 ```kotlin
@@ -49,9 +47,11 @@ val list_2 = listOf("banana", "strawberry")
 val newList = list_1 + list_2 // [orange, apple, banana, strawberry]
 ```
 
-####
-
+#
 #### Looping
+
+[Looping](https://kotlinlang.org/docs/tutorials/kotlin-for-py/loops.html)
+
 - Kotlin
 ```kotlin
 val list = listOf("orange", "apple")
